@@ -1,9 +1,10 @@
 import React from 'react';
+import NameCard from '../NameCard/NameCard';
 import styles from './ResultsContainer.module.css';
 
 const ResultsContainer = ({ suggestions }) => {
-    const suggestionsJSX = suggestions.map(suggestion => {
-        return <p key = {suggestion}>{suggestion}</p>
+    const suggestionsJSX = suggestions.map((suggestion, index) => {
+        return <NameCard key = {index} name = {suggestion}/>
     });
 
 
