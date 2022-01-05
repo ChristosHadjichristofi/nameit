@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Header.module.css';
 
-const Header = () => {
+const Header = ({ headTitle }) => {
     return (
         <div className={styles.header_container}>
 
@@ -10,7 +10,7 @@ const Header = () => {
                 className={styles.header_img} 
                 alt="headerImage">
             </img>
-            <h1 className={styles.header_text}>Name It!</h1>
+            <h1 className={styles.header_text}>{headTitle}</h1>
         </div>
     );
 };
