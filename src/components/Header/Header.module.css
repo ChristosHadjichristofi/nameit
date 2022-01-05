@@ -8,9 +8,28 @@
 .header_text {
     font-family: 'Hachi Maru Pop', cursive;
     margin: 5px 0 15px 0;
+    transition: font-size 1s;
+}
+
+.header_text_expanded {
+    font-size: 36px;
+}
+
+.header_text_contracted {
+    font-size: 12px;
 }
 
 .header_img {
-    width: 250px;
+    width: auto;
+    transition: max-width 1s, min-width 1s;
+}
 
+.header_img_expanded {
+    min-width: 230px;
+    max-width: 250px;
+}
+
+.header_img_contracted {
+    min-width: 40px;
+    max-width: 60px;
 }
