@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header/Header';
 import SearchBox from '../SearchBox/SearchBox';
 import ResultsContainer from '../ResultsContainer/ResultsContainer';
-import styles from './App.module.css';
+import "./App.module.css";
 
 const name = require('@rstacruz/startup-name-generator');
 
@@ -14,7 +14,7 @@ class App extends React.Component {
     }
 
     userInput = (input) => {
-        this.setState({ headerExpanded: !input, suggestions: name(input) });
+        this.setState({ headerExpanded: !input, suggestions: input ? name(input) : [] });
     };
 
     render() {
